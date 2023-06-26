@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Beranda</title>
+    <object th:include="fragments/fragment :: css" th:remove="tag"></object>
+    <object th:include="fragments/fragment :: js" th:remove="tag"></object>
+</head>
+<body>
+<nav th:replace="fragments/fragment :: navbar"></nav>
+<div class="d-flex justify-content-center">
+    <div class="m-4">
+        <h2>WELCOME TO SIMATERIAL</h2>
+        <br>
+        <div class="d-flex justify-content-center">
+            <h6>List of Features:</h6>
+        </div>
+        <br>
+<!--        <div class="d-flex justify-content-center">-->
+<!--            <a th:href="@{/konser}" class="mx-2 btn btn-primary">Konser</a>-->
+<!--            <a th:href="@{/tiket}" class="mx-2 btn btn-primary">Tiket</a>-->
+<!--            <a th:href="@{/idol}" class="mx-2 btn btn-primary">Idol</a>-->
+<!--        </div>-->
+        <!--        <div class="my-3 justify-content-center">-->
+        <!--            <a th:href="@{/penyelenggara/viewall}" class="mx-2 btn btn-primary">Lihat semua penyelenggara</a>-->
+        <!--            <a th:href="@{/penyelenggara/add}" class="mx-2 btn btn-outline-primary">Tambah penyelenggara</a>-->
+        <!--        </div>-->
+    </div>
+</div>
+</body>
+</html>
